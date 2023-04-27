@@ -7,7 +7,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(83, 81, 79);
+  background-color: #53514f;
 }
 
 .container {
@@ -36,5 +36,4 @@ body {
   width: 25vw;
   height: 2rem;
   justify-content: center;
-  font-size: ;
 }
