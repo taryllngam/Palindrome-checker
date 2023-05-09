@@ -4,7 +4,6 @@ const display = document.getElementById('display')
 
 const isPalindrome = () => {
   const input = inputArea.value
-  const upperVal = input.toUpperCase()
   const normalizedText = input.replace(/[^a-zA-Z]/g, '').toLowerCase()
   const reverse = normalizedText.split('').reverse().join('')
   if (input === '') {
@@ -12,9 +11,9 @@ const isPalindrome = () => {
     display.innerHTML = 'No word to check'
   }
   if (normalizedText === reverse) {
-    display.innerHTML = `${upperVal}, is a palindrome`
+    display.innerHTML = `${input.toUpperCase()}, is a palindrome`
   } else {
-    display.innerHTML = `${upperVal}, is not a palindrome`
+    display.innerHTML = `${input.toUpperCase()}, is not a palindrome`
   }
 }
 
